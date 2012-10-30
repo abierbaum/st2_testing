@@ -1,4 +1,6 @@
 st2_testing
 ===========
 
-Test area for sencha touch 2 code
+Experimental area for testing out some ST2 concepts.  
+
+Don't use this code, you have been warned.
