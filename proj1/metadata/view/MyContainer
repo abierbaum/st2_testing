@@ -1,0 +1,31 @@
+{
+    "type": "container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MyContainer",
+        "designer|userAlias": "mycontainer",
+        "ui": "light"
+    },
+    "id": "ExtBox1-ext-gen2412",
+    "designerId": "347dcf44-5d05-4cd7-a349-3b7c8b2fa2b3",
+    "cn": [
+        {
+            "type": "map",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyMap",
+                "height": 368,
+                "ui": "light"
+            },
+            "designerId": "e46ff777-98f6-4226-b764-273762d9cf2b"
+        }
+    ]
+}

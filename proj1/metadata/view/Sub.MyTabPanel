@@ -1,0 +1,56 @@
+{
+    "type": "tabpanel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Sub.MyTabPanel",
+        "designer|initialView": true,
+        "ui": "light"
+    },
+    "id": "ExtBox1-ext-gen2383",
+    "designerId": "be0e8396-120f-4985-b9b7-1f8614868448",
+    "cn": [
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "First"
+            },
+            "designerId": "a1fdf61f-b56e-4688-a62a-ed5c660e2396",
+            "masterInstanceId": "ExtBox1-ext-gen2412"
+        },
+        {
+            "type": "container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Second",
+                "designer|userClassName": "MyContainer1"
+            },
+            "designerId": "0193ee38-6818-439c-917a-6cf58e22163a"
+        },
+        {
+            "type": "container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Third",
+                "designer|userClassName": "MyContainer2"
+            },
+            "designerId": "151fecb8-4e98-4ecc-837f-993cfcb5a04e"
+        }
+    ]
+}

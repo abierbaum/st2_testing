@@ -1,0 +1,62 @@
+{
+    "name": "proj1",
+    "settings": {
+        "urlPrefix": "",
+        "spacesToIndent": 3,
+        "exportPath": "",
+        "lineEnding": "LF",
+        "genTimestamps": false,
+        "cacheBust": false
+    },
+    "xdsVersion": "2.1.0",
+    "xdsBuild": 640,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000498,
+    "framework": "touch20",
+    "topInstanceFileMap": {
+        "b8149bbb-1562-4b13-a9b7-e6b4055af709": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "be0e8396-120f-4985-b9b7-1f8614868448": {
+            "paths": [
+                "metadata/view/Sub.MyTabPanel",
+                "myCode/view/override/Sub/MyTabPanel.js",
+                "myCode/view/Sub/MyTabPanel.js"
+            ],
+            "className": "Sub.MyTabPanel"
+        },
+        "94899e37-0323-4089-b079-c8e3c2c7eb22": {
+            "paths": [
+                "metadata/resource/GoogleMapsAPI"
+            ],
+            "className": "GoogleMapsAPI"
+        },
+        "347dcf44-5d05-4cd7-a349-3b7c8b2fa2b3": {
+            "paths": [
+                "metadata/view/MyContainer",
+                "myCode/view/override/MyContainer.js",
+                "myCode/view/MyContainer.js"
+            ],
+            "className": "MyContainer"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "be0e8396-120f-4985-b9b7-1f8614868448",
+            "347dcf44-5d05-4cd7-a349-3b7c8b2fa2b3"
+        ],
+        "store": [],
+        "controller": [],
+        "model": [],
+        "resource": [
+            "b8149bbb-1562-4b13-a9b7-e6b4055af709",
+            "94899e37-0323-4089-b079-c8e3c2c7eb22"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}
