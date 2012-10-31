@@ -106,6 +106,7 @@ Ext.define('CityBars.controller.Business', {
     },
 
     launch: function() {
+        // Help me.
         var me = this;
 
         Ext.Viewport.setMasked({ message: 'Loading...' });

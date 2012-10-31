@@ -160,7 +160,7 @@
                     "    map.setMapOptions({",
                     "        zoom: 18",
                     "    });",
-                    "    ",
+                    "",
                     "    map.setMapCenter({",
                     "        latitude: lat,",
                     "        longitude: lon",
@@ -191,6 +191,7 @@
                 "designer|userClassName": "launch",
                 "fn": "launch",
                 "implHandler": [
+                    "// Help me.",
                     "var me = this;",
                     "",
                     "Ext.Viewport.setMasked({ message: 'Loading...' });",

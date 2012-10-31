@@ -22,6 +22,7 @@ Ext.define('CityBars.view.DetailPanel', {
             docked: 'top',
             ui: 'light',
             layout: {
+                align: 'center',
                 pack: 'center',
                 type: 'hbox'
             }

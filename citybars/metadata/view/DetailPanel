@@ -20,6 +20,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "container|align": "center",
                 "container|pack": "center",
                 "designer|userClassName": "MyTabBar",
                 "docked": "top",
