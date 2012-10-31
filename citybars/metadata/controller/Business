@@ -1,0 +1,233 @@
+{
+    "type": "controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Business"
+    },
+    "id": "ExtBox1-ext-gen15052",
+    "designerId": "e91896ac-fad3-4dbf-9f3c-acfdb2bc5d9e",
+    "cn": [
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "dataList",
+                "ref": "dataList",
+                "selector": "#dataList"
+            },
+            "designerId": "29a547db-e122-4051-95d2-f35e39515f1e"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "listCard",
+                "ref": "listCard",
+                "selector": "#listCard"
+            },
+            "designerId": "ac584b3b-1a09-4137-ada3-eaf3b0895d9b"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "mainNav",
+                "ref": "mainNav",
+                "selector": "mainnav"
+            },
+            "designerId": "dcccfdc5-6cf1-4636-8cb6-19f69dcca72a"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "detailCard",
+                "ref": "detailCard",
+                "selector": "detailpanel"
+            },
+            "designerId": "c63afc32-69f5-4b83-bed8-f7d760cc2ba0"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "getLocation",
+                "fn": "getLocation",
+                "designer|params": [
+                    "callback"
+                ],
+                "implHandler": [
+                    "console.log('getLoc');",
+                    "if (navigator && navigator.geolocation) {",
+                    "    navigator.geolocation.getCurrentPosition(function(position) {",
+                    "        callback(position);",
+                    "    }, function(error) {",
+                    "        // give a warning for error",
+                    "    });",
+                    "}"
+                ]
+            },
+            "designerId": "3885eee6-ec58-49e1-a432-5cfd4640cfa3"
+        },
+        {
+            "type": "basicfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "getBusinesses",
+                "fn": "getBusinesses",
+                "designer|params": [
+                    "location",
+                    "callback"
+                ],
+                "implHandler": [
+                    "// NOTE ABOUT YELP KEY",
+                    "// You must use your own yelp key, available by registering (for free) with Yelp:",
+                    "// http://www.yelp.com/developers/getting_started/api_overview",
+                    "// (in this app, we use the Review Search API v1.0)",
+                    "    var store = Ext.data.StoreManager.lookup('BusinessStore'),",
+                    "        yelpKey = '', // enter your yelp key here",
+                    "        url = 'http://api.yelp.com/business_review_search' +",
+                    "        '?ywsid=' + yelpKey +",
+                    "        '&term=Bars' +",
+                    "        '&lat=' + location.coords.latitude +",
+                    "        '&long=' + location.coords.longitude;",
+                    "    store.getProxy().setUrl(url);",
+                    "    store.load(function() {",
+                    "        callback(store);",
+                    "    });"
+                ]
+            },
+            "designerId": "0d1be29d-0940-4265-877a-750f8738f6d9"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onListItemTap",
+                "fn": "onListItemTap",
+                "implHandler": [
+                    "var me = this,",
+                    "    map,",
+                    "    lat,",
+                    "    long,",
+                    "    loc,",
+                    "    marker,",
+                    "    info, details;",
+                    "",
+                    "if (record) {",
+                    "",
+                    "    details = Ext.create('CityBars.view.DetailPanel', {",
+                    "        title: 'Details'",
+                    "    });",
+                    "",
+                    "    // set the map",
+                    "    map = details.child('#detailMap');",
+                    "    lat = record.get('latitude');",
+                    "    lon = record.get('longitude');",
+                    "",
+                    "    map.setMapOptions({",
+                    "        zoom: 18",
+                    "    });",
+                    "    ",
+                    "    map.setMapCenter({",
+                    "        latitude: lat,",
+                    "        longitude: lon",
+                    "    });",
+                    "",
+                    "    // set the info",
+                    "    info = details.child('#contact').child('#info');",
+                    "    info.child('#photo').setData(record.data);",
+                    "    info.child('#data').setData(record.data);",
+                    "",
+                    "    me.getMainNav().push(details);",
+                    "}"
+                ],
+                "name": "itemtap",
+                "designer|targetType": "Ext.dataview.List",
+                "designer|controlQuery": "#dataList"
+            },
+            "designerId": "d8288a0b-efe9-49bf-8651-5eb9cc5056eb"
+        },
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "launch",
+                "fn": "launch",
+                "implHandler": [
+                    "var me = this;",
+                    "",
+                    "Ext.Viewport.setMasked({ message: 'Loading...' });",
+                    "// get the location, then...",
+                    "me.getLocation(function (location) {",
+                    "",
+                    "    // then use Yelp to get the businesses",
+                    "    me.getBusinesses(location, function (store) {",
+                    "",
+                    "        // then bind data to list and show it",
+                    "        me.getDataList().setStore(store);",
+                    "",
+                    "        Ext.Viewport.setMasked(false);",
+                    "    });",
+                    "});"
+                ]
+            },
+            "designerId": "f1a7c610-b00d-4c71-9025-f8ba6a0fbbb2"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onCallButtonTap",
+                "fn": "onCallButtonTap",
+                "implHandler": [
+                    "alert('call tap');"
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "detailpanel button[text='Call']"
+            },
+            "designerId": "70740668-3f6f-4c6c-9f9b-7661f1c0634b"
+        }
+    ]
+}

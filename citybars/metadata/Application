@@ -1,0 +1,31 @@
+{
+    "type": "application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "requires": [
+            "Ext.dataview.List",
+            "Ext.data.proxy.JsonP"
+        ],
+        "models": [
+            "Business"
+        ],
+        "stores": [
+            "BusinessStore"
+        ],
+        "views": [
+            "DetailPanel",
+            "ListContainer",
+            "MainNav"
+        ],
+        "name": "CityBars",
+        "controllers": [
+            "Business"
+        ]
+    },
+    "id": "ExtBox1-ext-gen1760",
+    "designerId": "application"
+}

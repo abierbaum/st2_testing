@@ -1,0 +1,49 @@
+{
+    "type": "navigationview",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MainNav",
+        "designer|userAlias": "mainnav",
+        "designer|initialView": true
+    },
+    "id": "ExtBox1-ext-gen2005",
+    "designerId": "3e7eb33b-8bf5-47c1-b6db-b85e588a629a",
+    "cn": [
+        {
+            "type": "navigationbar",
+            "reference": {
+                "name": "navigationBar",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyNavigationBar"
+            },
+            "designerId": "55089f46-6ed3-40b4-bb04-b9d42bcc932a"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "City Bars"
+            },
+            "designerId": "65121f7e-47d3-4bf4-8dcc-293989bac56b",
+            "customConfigs": [
+                {
+                    "group": "(Custom Properties)",
+                    "name": "title",
+                    "type": "string"
+                }
+            ],
+            "masterInstanceId": "ExtBox1-ext-gen2515"
+        }
+    ]
+}
