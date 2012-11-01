@@ -1,0 +1,62 @@
+{
+    "name": "p5common",
+    "settings": {
+        "urlPrefix": "",
+        "spacesToIndent": 3,
+        "exportPath": "/home/allenb/Source/st2_testing/proj3/deploy",
+        "lineEnding": "LF",
+        "genTimestamps": false,
+        "cacheBust": false
+    },
+    "xdsVersion": "2.1.0",
+    "xdsBuild": 640,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000498,
+    "framework": "touch20",
+    "topInstanceFileMap": {
+        "ef847f60-80fc-4a5e-9845-a63d993b97b1": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "29a3de3e-e518-420a-abcf-18ad4c676302": {
+            "paths": [
+                "metadata/view/p5_common.BaseView1",
+                "generated/view/override/p5_common/BaseView1.js",
+                "generated/view/p5_common/BaseView1.js"
+            ],
+            "className": "p5_common.BaseView1"
+        },
+        "da38e5d0-cdcf-4ae9-b02b-9d417d21afd6": {
+            "paths": [
+                "metadata/resource/css"
+            ],
+            "className": "css"
+        },
+        "51b2adb2-7d78-49a3-a29b-fa0cb2d434d7": {
+            "paths": [
+                "metadata/view/BaseView2",
+                "generated/view/override/BaseView2.js",
+                "generated/view/BaseView2.js"
+            ],
+            "className": "BaseView2"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "29a3de3e-e518-420a-abcf-18ad4c676302",
+            "51b2adb2-7d78-49a3-a29b-fa0cb2d434d7"
+        ],
+        "store": [],
+        "controller": [],
+        "model": [],
+        "resource": [
+            "ef847f60-80fc-4a5e-9845-a63d993b97b1",
+            "da38e5d0-cdcf-4ae9-b02b-9d417d21afd6"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

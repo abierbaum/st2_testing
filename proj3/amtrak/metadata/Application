@@ -1,0 +1,36 @@
+{
+    "type": "application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "views": [
+            "BaseView1",
+            "BaseView2"
+        ],
+        "appFolder": "generated",
+        "name": "amtrak"
+    },
+    "id": "ExtBox1-ext-gen1514",
+    "designerId": "application",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "launch",
+                "fn": "launch",
+                "implHandler": [
+                    "   console.log('launching');"
+                ]
+            },
+            "designerId": "707166aa-3fb0-45b7-b694-a04cf10b7c5f"
+        }
+    ]
+}
