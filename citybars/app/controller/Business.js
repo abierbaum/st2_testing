@@ -16,6 +16,10 @@
 Ext.define('CityBars.controller.Business', {
     extend: 'Ext.app.Controller',
 
+    requires: [
+        'CityBars.controller.override.Business'
+    ],
+
     config: {
         refs: {
             dataList: '#dataList',
