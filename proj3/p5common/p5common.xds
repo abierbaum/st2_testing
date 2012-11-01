@@ -23,8 +23,8 @@
         "29a3de3e-e518-420a-abcf-18ad4c676302": {
             "paths": [
                 "metadata/view/p5_common.BaseView1",
-                "generated/view/override/p5_common/BaseView1.js",
-                "generated/view/p5_common/BaseView1.js"
+                "gen/view/override/p5_common/BaseView1.js",
+                "gen/view/p5_common/BaseView1.js"
             ],
             "className": "p5_common.BaseView1"
         },
@@ -37,24 +37,24 @@
         "51b2adb2-7d78-49a3-a29b-fa0cb2d434d7": {
             "paths": [
                 "metadata/view/BaseView2",
-                "generated/view/override/BaseView2.js",
-                "generated/view/BaseView2.js"
+                "gen/view/override/BaseView2.js",
+                "gen/view/BaseView2.js"
             ],
             "className": "BaseView2"
         },
         "7c3aedaf-0b91-4585-b061-937239002f79": {
             "paths": [
                 "metadata/model/Person",
-                "generated/model/override/Person.js",
-                "generated/model/Person.js"
+                "gen/model/override/Person.js",
+                "gen/model/Person.js"
             ],
             "className": "Person"
         },
         "033a8f1f-4060-4f1e-8228-7394432a0392": {
             "paths": [
                 "metadata/store/TestPeople",
-                "generated/store/override/TestPeople.js",
-                "generated/store/TestPeople.js"
+                "gen/store/override/TestPeople.js",
+                "gen/store/TestPeople.js"
             ],
             "className": "TestPeople"
         }

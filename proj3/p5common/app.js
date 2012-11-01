@@ -28,7 +28,7 @@ Ext.application({
       'p5_common.BaseView1',
       'BaseView2'
    ],
-   appFolder: 'generated',
+   appFolder: 'gen',
    name: 'p5_common',
 
    launch: function() {
