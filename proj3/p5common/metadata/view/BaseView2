@@ -7,22 +7,56 @@
     "codeClass": null,
     "userConfig": {
         "designer|userClassName": "BaseView2",
-        "designer|userAlias": "baseview2"
+        "designer|userAlias": "baseview2",
+        "layout": "fit"
     },
     "id": "ExtBox1-ext-gen3847",
     "designerId": "51b2adb2-7d78-49a3-a29b-fa0cb2d434d7",
     "cn": [
         {
-            "type": "customevent",
+            "type": "list",
             "reference": {
-                "name": "customEvents",
+                "name": "items",
                 "type": "array"
             },
             "codeClass": null,
             "userConfig": {
-                "designer|userClassName": "CustomEvent"
+                "designer|userClassName": "MyList",
+                "store": "TestPeople"
             },
-            "designerId": "9bd0a914-52f0-4554-8ff3-869558169754"
+            "designerId": "67bb53f5-6ecb-444a-a6b8-1a2f2fcbd8f7",
+            "cn": [
+                {
+                    "type": "template",
+                    "reference": {
+                        "name": "itemTpl",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "itemTpl",
+                        "implHandler": [
+                            "<div>List Item {name} {age}</div>"
+                        ],
+                        "designer|displayName": "itemTpl"
+                    },
+                    "designerId": "86f3b9c0-4144-45fa-9b80-49399da6873b"
+                },
+                {
+                    "type": "toolbar",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyToolbar1",
+                        "docked": "top",
+                        "title": "Sample List"
+                    },
+                    "designerId": "7c2e1ec2-9360-41ac-9f6d-f68cd49c7929"
+                }
+            ]
         }
     ]
 }

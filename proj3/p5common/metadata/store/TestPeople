@@ -1,0 +1,16 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "TestPeople",
+        "data": "[{name:'Todd', age: 10},{name:'Fred', age: 20},{name:'Ben', age: 32}]",
+        "model": "Person",
+        "storeId": "TestPeople"
+    },
+    "id": "ExtBox1-ext-gen7255",
+    "designerId": "033a8f1f-4060-4f1e-8228-7394432a0392"
+}

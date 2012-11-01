@@ -18,6 +18,12 @@ Ext.Loader.setConfig({
 });
 
 Ext.application({
+   models: [
+      'Person'
+   ],
+   stores: [
+      'TestPeople'
+   ],
    views: [
       'p5_common.BaseView1',
       'BaseView2'
